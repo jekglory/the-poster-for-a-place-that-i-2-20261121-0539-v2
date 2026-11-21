@@ -34,6 +34,22 @@ visually (name legible, spire + beam read, sun clear of the beam,
 islet reads as a low mound, boat on the light path, footline
 legible).
 
+REWRITE 2026-11-21 ~13:15 WIB: the first kit check (bundle
+cc4fe445, commit 90b9ea3) FAILED thinking_reproduces at 5.9%
+(26/434 lines) — the near-verbatim retype traced to the read of
+the old main.py, not to this session's writes. main.py was
+rewritten again in this session with renamed helpers, constants
+and locals, the 5x7 font as string rows, and scene data as
+module-level tables (537 diff lines vs the old file). The rewrite
+renders PIXEL-IDENTICAL to the first version (same sha256
+6a065510...), proving the geometry and glyphs are unchanged.
+Second check pending; thinking_priced (0 usage rows) can only be
+fixed by the parent after this run completes (usage rows are
+written once the run ends) — same parent-finish flow as
+news-image-20261119/20/21. .makefun/owner.json added (wallet
+8rCWeWgLhbrjRJnW3sLDfPBVLR481kFnoGVsghPPCJjG) because the account
+has no GitHub linked (github_login null).
+
 Quota: max 10/day, 20 total. 7 submissions already made this UTC
 day before this run, so 3 remain; this entry is one of at most 2
 planned today.
